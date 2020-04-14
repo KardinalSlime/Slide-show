@@ -1,0 +1,73 @@
+object Form1: TForm1
+  Left = 913
+  Height = 400
+  Top = 243
+  Width = 457
+  Caption = 'Form1'
+  Menu = MainMenu1
+  LCLVersion = '2.0.6.0'
+  object MainMenu1: TMainMenu
+    left = 16
+    top = 8
+    object FileButton: TMenuItem
+      Caption = 'File'
+      OnClick = FileButtonClick
+      object OpenButton: TMenuItem
+        Caption = 'Open'
+        OnClick = OpenButtonClick
+      end
+      object CloseButton: TMenuItem
+        Caption = 'Close'
+        OnClick = CloseButtonClick
+      end
+    end
+    object ModesButton: TMenuItem
+      Caption = 'Operating modes'
+      object WindiwButton: TMenuItem
+        Caption = 'Window mode'
+        OnClick = WindiwButtonClick
+      end
+      object FullScreenButton: TMenuItem
+        Caption = 'Full screen mode'
+        OnClick = FullScreenButtonClick
+      end
+    end
+    object languagesButton: TMenuItem
+      Caption = 'Languages'
+      object RussianButton: TMenuItem
+        Caption = 'Russian'
+        OnClick = RussianButtonClick
+      end
+      object EnglishButton: TMenuItem
+        Caption = 'English'
+        OnClick = EnglishButtonClick
+      end
+    end
+    object ThemesButton: TMenuItem
+      Caption = 'Themes'
+      object MenuItem11: TMenuItem
+        Caption = 'MenuItem11'
+        OnClick = MenuItem11Click
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'MenuItem12'
+        OnClick = MenuItem12Click
+      end
+      object MenuItem13: TMenuItem
+        Caption = 'Kids'
+        OnClick = MenuItem13Click
+      end
+    end
+    object HelpButton: TMenuItem
+      Caption = 'Help'
+      object AboutButton: TMenuItem
+        Caption = 'About'
+        OnClick = AboutButtonClick
+      end
+      object HelpButtonForm2: TMenuItem
+        Caption = 'Help'
+        OnClick = HelpButtonForm2Click
+      end
+    end
+  end
+end
